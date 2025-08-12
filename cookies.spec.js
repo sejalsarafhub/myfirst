@@ -4,13 +4,13 @@ test("cookies", async({browser}) =>{
     const context = await browser.newContext();
     await context.addCookies([
         {
-           name: "1234",              // Cookie name
-      value: "string_sdr",           // Cookie value
-      domain: "www.saucedemo.com", // Must match the site domain
-      path: "/",                 // Path
-      httpOnly: false,           // Optional
+           name: "1234",             
+      value: "string_sdr",          
+      domain: "www.saucedemo.com", 
+      path: "/",               
+      httpOnly: false,           
       secure: false,
-                    // Optional
+                   
       
         }
     ])
